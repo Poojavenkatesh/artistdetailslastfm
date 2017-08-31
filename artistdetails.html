@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Artist Details</title>
+	<link rel="stylesheet" type="text/css" href="javajam.css">
+    <meta charset="utf-8"/>
+	<script type="text/javascript" src="music.js"></script>
+ </head>
+  <body id="wrapper" >
+	
+		<nav id= "new1" style="width: 10%;height: 113px;"> 
+			<img src="javajamlogo.jpg" alt="coffee" >
+		</nav>
+	
+	<header id="head">
+		<h1>&nbsp;JavaJam Coffee House</h1>
+	</header>
+	<ul id="artist">
+			<li><a href="Home.html"><u>Home</u></a></li>
+			<li><a href="Menu.html" ><u>Menu</u></a></li>
+			<li><a href="http://localhost/musician.php"><u>Music</u></a></li>
+			<li><a href="Jobs.html"><u>Jobs</u></a></li>
+			<li><a href="artistdetails.html"><u>ArtistInfo</u></a></li>	
+	
+	</ul>
+	
+	
+	</br></br></br>
+	<div>
+    <form name="formName" style="float: left;">
+       <label>Artist name:</label>
+	   <input type="text" id="init" name="init" value="" placeholder=""/>
+       <input type="button" onclick="sendRequest();" id="keyd" value="Display Info"/>
+    </form>
+	</br>
+	<div align="justify" id="info" >&nbsp;</div>
+	<div id="moreInfo"> 
+	  <div id="topAlbum">&nbsp;</div>
+      <div id="simArt">&nbsp;</div>
+	</div>
+	</div>
+	</br></br></br></br></br></br></br></br></br>
+	
+   </body>
+</html>

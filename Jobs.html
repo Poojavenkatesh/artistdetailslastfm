@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Jobs</title>
+		<link rel="stylesheet" type="text/css" href="javajam.css">
+	
+	</head>
+	<body id="wrapper">
+		<div>
+		<nav id="nav3"> 
+			<table>
+				<tr>
+					<th><img src="javajamlogo.jpg" alt="coffee" ></th>
+				</tr>
+				<tr>
+					<td><a href="Home.html">Home</a></td>
+				</tr>
+				<tr>
+					<td><a href="Menu.html" >Menu</a></td>
+				</tr>
+				<div>
+				<tr>
+					<td><a href="http://localhost/musician.php">Music</a></td>
+				</tr>
+				</div>
+				<tr>
+					<td><a href="Jobs.html">Jobs</a></td>
+				</tr>
+				<tr>
+					<td><a href="artistdetails.html">ArtistInfo</a></td>
+				</tr>
+	
+		
+		</table>
+		</nav>
+		</div>
+		<header>
+		<h1>&nbsp;JavaJam Coffee House</h1>
+		</header>
+		<div class="one"></div>
+		<div>
+			<h2 id="all">Jobs at JavaJam</h2>
+			<p>Want to work at JavaJam? Fill out the form below to start your application. Required fields are marked with an asterisk (*). </p>
+			
+		</div>
+		<div>
+		<script type="text/javascript">
+		function validation(){
+			var n = document.forms["pooform"]["myname"].value;
+			var l = /[A-Za-z]/;
+			var em = document.forms["pooform"]["myemail"].value;
+			var at = em.indexOf("@");
+			var dot = em.lastIndexOf(".");
+			var ex = document.forms["pooform"]["myexperience"].value;
+			
+			if(n == ""||em == ""||ex == "")
+			{
+				alert("Need to fill all the fields");
+				return false;
+			}
+			if(at < 1||dot < at+2||dot+2 >= em.length)
+			{
+				alert("enter a valid email address");
+				return false;
+			}
+			if(/^[0-9a-zA-Z]+$/gi.test(document.pooform.myname.value))
+			{
+				alert("Please enter valid characters for the Name field");
+				return false;
+			}
+			
+			return true;
+		}
+	</script>
+		<form name="pooform" action="http://localhost/message.php" onsubmit="return validation()" method="POST">
+			<table>
+				<tr>
+					<td>&nbsp;</td>
+					<td align="right"><label>*Name: </label></td>
+					<td><input type="text" name="myname"></td>
+				</tr>
+				<tr>
+					
+					<td>&nbsp;</td>
+					<td align="right"><label>*E-mail: </label></td>
+					<td><input type="text" name="myemail"></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td align="right"><label>*Experience: </label></td>
+					<td><textarea name="myexperience" rows="3" col="10"></textarea></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td align="right"><input type="submit" value="Apply Now"/></td>
+				</tr>
+		</table>
+		</form>
+		</div>
+		</br>
+		</br>
+		</br>
+		
+		
+		<footer>
+				<p><i> Copyright &copy 2016 JavaJam Coffee House </i></br>
+				<a href= "Pooja@Venkatesh.com">Pooja@Venkatesh.com</a></p>
+			</footer>
+	</body>
+</html>
